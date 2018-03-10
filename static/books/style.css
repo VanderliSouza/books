@@ -1,0 +1,55 @@
+li a {
+    color: green;
+}
+body {
+    background: red;
+
+}
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  
+}
+
+img {
+    width: 50%;
+    height: auto;
+    float:right
+}
+div {
+
+    position: relative;
+    -webkit-animation-name: img;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 10s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: img;
+    animation-delay: 10s;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes img {
+    from {top: 0px;}
+    to {top: -600px; background-color: blue;}
+}
+
+@keyframes img {
+    from {top: 0px;}
+    to {top: -600px; background-color: blue;}
+}
